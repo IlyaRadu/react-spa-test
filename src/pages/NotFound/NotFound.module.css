@@ -1,0 +1,6 @@
+.root {
+  max-width: var(--app-max-width);
+  margin: 40px auto;
+  padding: 0 var(--page-padding);
+  text-align: center;
+}

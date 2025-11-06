@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# React SPA with TypeScript and Zustand
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Single Page Application (SPA) built using React, TypeScript, and Zustand. It displays a list of cards, each showing an image and text, with functionality for liking and deleting cards, filtering favorites, and navigating to a detailed card page.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+```
+react-spa-test
+├── public
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── index.css
+│   ├── react-app-env.d.ts
+│   ├── setupTests.ts
+│   ├── api
+│   │   └── cards.ts
+│   ├── components
+│   │   ├── Card
+│   │   │   ├── Card.tsx
+│   │   │   ├── Card.module.css
+│   │   │   └── Card.test.tsx
+│   │   ├── CardList
+│   │   │   ├── CardList.tsx
+│   │   │   └── CardList.module.css
+│   │   └── Navbar
+│   │       ├── Navbar.tsx
+│   │       └── Navbar.module.css
+│   ├── pages
+│   │   ├── Home.tsx
+│   │   ├── CardDetail.tsx
+│   │   └── NotFound.tsx
+│   ├── store
+│   │   └── useStore.ts
+│   ├── hooks
+│   │   └── useFetchCards.ts
+│   └── types
+│       └── index.ts
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Card Display**: Each card shows an image and text.
+- **Like and Delete Functionality**: Users can like or delete cards.
+- **Filter Favorites**: Users can filter to view only their favorite cards.
+- **Detailed Card Page**: Users can navigate to a detailed view of each card.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
+   ```
+   cd react-spa-test
+   ```
 
-### `npm run build`
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Open your browser and go to `http://localhost:3000` to view the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+- Navigate through the application using the Navbar.
+- View the list of cards on the Home page.
+- Click on a card to view its details.
+- Use the like and delete buttons to manage your cards.
+- Filter the list to show only favorite cards.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React
+- TypeScript
+- Zustand
+- React Router
+- CSS Modules
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.

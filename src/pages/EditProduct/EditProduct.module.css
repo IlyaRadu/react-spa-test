@@ -1,0 +1,20 @@
+/* Контейнер страницы редактирования */
+.root {
+  max-width: var(--app-max-width);
+  margin: 20px auto;
+  padding: 0 var(--page-padding);
+  box-sizing: border-box;
+}
+.form { display: flex; flex-direction: column; gap: 12px; }
+.field { display: flex; flex-direction: column; gap: 6px; }
+.label { font-weight: 600; }
+input, textarea {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.error { color: #c0392b; font-size: 13px; }
+.actions { display: flex; gap: 8px; margin-top: 8px; }
+.submit { background: var(--brand-color); color: #fff; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+.cancel { background: transparent; border: 1px solid #ddd; padding: 8px 12px; border-radius: 6px; cursor: pointer; }

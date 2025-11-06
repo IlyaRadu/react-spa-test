@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Общие переменные и базовые стили */
+:root {
+  --app-max-width: 1200px;
+  --page-padding: 24px;
+  --brand-color: #007bff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #fafafa;
+  color: #111;
 }
+
+/* общий контейнер */
+.appContainer {
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  width: 100%;
+}
+
+/* простые служебные стили */
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+a { text-decoration: none; color: inherit; }

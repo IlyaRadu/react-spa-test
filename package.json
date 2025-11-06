@@ -2,7 +2,7 @@
   "name": "react-spa-test",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://react-spa-test.github.io/react-spa-test",
+  "homepage": "https://ilyaradu.github.io/react-spa-test/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
